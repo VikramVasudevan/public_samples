@@ -38,3 +38,17 @@ function generateNumbers() {
             { 'random_number': Math.random(), 'message': makeId(30) }
         ]);
 }
+
+function convertToUpperCase(prmInput){
+    if(typeof prmInput != 'undefined' ) {
+        return prmInput["prmName"].toUpperCase();
+    }
+    else return null;
+}
+
+function convertToLowerCase(prmInput){
+    if(typeof prmInput != 'undefined' ) {
+        return prmInput["prmName"].toLowerCase();
+    }
+    else return null;
+}
